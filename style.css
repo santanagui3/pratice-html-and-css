@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+button {
+    border-radius: 15px;
+    border:none;
+    padding: 10px 15px;
+    font-weight: bold;
+    background: #f19839;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+header nav p {
+    font-weight: bold;
+}
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/header.jpg');
+}
+.header-content {
+    max-width: 450px;
+    margin: 150px auto;
+    text-align: center;
+}
+.header-content h1 {
+    margin-bottom: 10px;
+}
+
+.pacotes {
+    
+    height: 500px;
+}
+
+
+/*Responsividade*/
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+
+/* Landscape phones and down */
+@media (max-width: 480px){
+    body{
+        height: calc(100vw - 55px);
+    }
+ 
+    header nav ul {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     padding: 0;
+     margin:0;
+
+     background:#1D61DD;
+     color: white;
+     font-weight: bold;
+     height: 55px;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+/* Portrait tablet to landscape and desktop */
+/*@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Large desktop */
+/*@media (min-width: 1200px) {  }
+
